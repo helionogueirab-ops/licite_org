@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Planejamento das compras públicas e PCA | LiciteOrg</title>
+  <meta name="title" content="Planejamento das compras públicas e PCA | LiciteOrg">
+  <meta name="description" content="Organize demandas, DFDs, ETP, TR/PB, orçamento e acompanhamento do Plano Anual de Contratações do seu município ou órgão público.">
+  <meta name="keywords" content="Plano Anual de Contratações, PCA municipal, Documento de Formalização da Demanda, DFD, Estudo Técnico Preliminar, ETP, Termo de Referência, TR, Projeto Básico, PB, planejamento das compras públicas, Lei 14.133/2021, capacitação Lei 14.133/2021">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Planejamento das compras públicas e PCA | LiciteOrg">
+  <meta property="og:description" content="Organize demandas, DFDs, ETP, TR/PB, orçamento e acompanhamento do Plano Anual de Contratações do seu município ou órgão público.">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "LiciteOrg",
+    "url": "https://liciteorg.com.br",
+    "description": "Consultoria especializada no planejamento institucional de compras públicas e implantação assistida do Plano Anual de Contratações (PCA) sob a Lei nº 14.133/2021."
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS v2 (Novo Design System Radical) -->
+  <link rel="stylesheet" href="css/styles_v2.css">
+</head>
+<body class="v2-dark-body">
+
+  <!-- Top Announcement Bar -->
+  <div class="v2-top-bar">
+    <div class="container">
+      <div class="top-bar-flex">
+        <span class="live-dot-pulse"></span>
+        <span class="top-bar-text"><strong>LEI Nº 14.133/2021:</strong> Consultoria Especializada em Planejamento das Compras Públicas & Gestão do PCA</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Glass Navbar -->
+  <header class="v2-navbar">
+    <div class="container v2-nav-container">
+      <a href="#" class="v2-brand-logo">
+        <div class="v2-brand-text">Licite<span>Org</span></div>
+      </a>
+
+      <nav class="v2-nav-links">
+        <a href="#como-funciona" class="v2-nav-item">Como funciona</a>
+        <a href="#diagrama" class="v2-nav-item">Fluxo de Integração</a>
+        <a href="#solucoes" class="v2-nav-item">Soluções</a>
+        <a href="#calendario" class="v2-nav-item">Calendário</a>
+        <a href="#capacitacao" class="v2-nav-item">Capacitação</a>
+        <a href="#faq" class="v2-nav-item">FAQ</a>
+      </nav>
+
+      <a href="#contato" class="v2-btn v2-btn-emerald">
+        Solicitar Diagnóstico
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO MASTER (Dark Executive Glass Hub) -->
+  <section class="v2-hero-master">
+    <div class="container">
+      <div class="v2-hero-card-hub">
+        
+        <div class="v2-hero-badge-pill">
+          <span class="pulse-dot"></span>
+          PLANEJAMENTO DAS COMPRAS PÚBLICAS | LEI Nº 14.133/2021
+        </div>
+
+        <h1 class="v2-hero-title">
+          Planeje as compras do seu município antes que o calendário vire urgência.
+        </h1>
+
+        <p class="v2-hero-subtitle">
+          Organizamos as demandas das secretarias, estruturamos o Plano Anual de Contratações e conectamos o Documento de Formalização da Demanda (DFD), o Estudo Técnico Preliminar (ETP), o Termo de Referência (TR) ou Projeto Básico (PB), o orçamento e o cronograma de execução.
+        </p>
+
+        <!-- Horizontal Flow Ribbon accompanying full page width -->
+        <div class="v2-hero-flow-ribbon">
+          <div class="v2-flow-step"><span class="step-num">01</span> Demandas das Secretarias</div>
+          <div class="v2-flow-arrow">➔</div>
+          <div class="v2-flow-step"><span class="step-num">02</span> Plano Anual (PCA)</div>
+          <div class="v2-flow-arrow">➔</div>
+          <div class="v2-flow-step"><span class="step-num">03</span> DFD</div>
+          <div class="v2-flow-arrow">➔</div>
+          <div class="v2-flow-step"><span class="step-num">04</span> ETP</div>
+          <div class="v2-flow-arrow">➔</div>
+          <div class="v2-flow-step"><span class="step-num">05</span> TR / PB</div>
+          <div class="v2-flow-arrow">➔</div>
+          <div class="v2-flow-step"><span class="step-num">06</span> Orçamento</div>
+          <div class="v2-flow-arrow">➔</div>
+          <div class="v2-flow-step"><span class="step-num">07</span> Cronograma</div>
+        </div>
+
+        <div class="v2-hero-actions-row">
+          <a href="#contato" class="v2-btn v2-btn-hero-primary" id="hero-primary-cta">
+            Solicitar Diagnóstico do Planejamento ➔
+          </a>
+          <a href="#calendario-reverso" class="v2-btn v2-btn-hero-secondary" id="hero-secondary-cta">
+            Ver Calendário Reverso do PCA
+          </a>
+        </div>
+
+        <div class="v2-trust-notice">
+          <strong>Atendimento técnico para estados, municípios e órgãos públicos:</strong> O escopo é definido após análise do regulamento, do calendário e da maturidade do órgão.
+        </div>
+
+      </div>
+
+      <!-- Hero Governance KPI Bar (Bento Cards) -->
+      <div class="v2-kpi-bento-grid">
+        <div class="v2-kpi-card">
+          <div class="kpi-tag">Mapeamento</div>
+          <div class="kpi-value">DFDs Revisados</div>
+          <div class="kpi-desc">Centralização e padronização das solicitações de compras</div>
+        </div>
+
+        <div class="v2-kpi-card">
+          <div class="kpi-tag">Conformidade</div>
+          <div class="kpi-value">Pendências Saneadas</div>
+          <div class="kpi-desc">Instrução preventiva na fase preparatória da licitação</div>
+        </div>
+
+        <div class="v2-kpi-card">
+          <div class="kpi-tag">Economicidade</div>
+          <div class="kpi-value">Fracionamento Evitado</div>
+          <div class="kpi-desc">Consolidação estratégica de objetos idênticos ou semelhantes</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GATILHO DE DOR (Desafios do Planejamento Municipal) -->
+  <section class="v2-section-wrapper">
+    <div class="container">
+      
+      <div class="v2-card-header-module">
+        <span class="v2-header-tag">Desafios Municipais</span>
+        <h2 class="v2-header-title">Seu município ainda organiza o planejamento em planilhas isoladas e pedidos sem padrão?</h2>
+        <p class="v2-header-desc">
+          Sem um fluxo institucional estruturado, as secretarias enviam demandas dispersas, sobrecarregando o setor de compras e gerando atrasos graves na execução dos serviços públicos.
+        </p>
+      </div>
+
+      <div class="v2-bento-pain-grid">
+        <div class="v2-pain-bento-card">
+          <span class="pain-num-pill">01</span>
+          <h3>Demandas incompletas</h3>
+          <p>Pedidos chegam sem justificativa adequada, sem estimativa preliminar e sem especificações suficientes para instruir a contratação.</p>
+        </div>
+
+        <div class="v2-pain-bento-card">
+          <span class="pain-num-pill">02</span>
+          <h3>Compras duplicadas ou mal agrupadas</h3>
+          <p>Secretarias diferentes solicitam itens idênticos em datas distintas, perdendo ganhos de escala e multiplicando certames desnecessários.</p>
+        </div>
+
+        <div class="v2-pain-bento-card">
+          <span class="pain-num-pill">03</span>
+          <h3>Falta de integração com PPA, LDO e LOA</h3>
+          <p>Dificuldade em conciliar as estimativas de contratação com os créditos orçamentários disponíveis e com as metas do planejamento orçamentário.</p>
+        </div>
+
+        <div class="v2-pain-bento-card">
+          <span class="pain-num-pill">04</span>
+          <h3>Prazos insuficientes para ETP, pesquisa e TR/PB</h3>
+          <p>Demandas enviadas em cima da hora não reservam tempo para elaborar o Estudo Técnico Preliminar e o Termo de Referência com a qualidade exigida.</p>
+        </div>
+      </div>
+
+      <div class="v2-warning-compliance-banner">
+        <div class="warning-tag">Aviso de Conformidade Legal</div>
+        <h4>Prevenção do Fracionamento de Despesas</h4>
+        <p>"A falta de consolidação pode dificultar a identificação de objetos semelhantes e aumentar o risco de fracionamento ou perda de economicidade."</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FLUXO INSTITUCIONAL DE 6 ETAPAS -->
+  <section id="como-funciona" class="v2-section-wrapper">
+    <div class="container">
+      
+      <div class="v2-card-header-module">
+        <span class="v2-header-tag">Fluxo Institucional</span>
+        <h2 class="v2-header-title">Da necessidade identificada ao acompanhamento do plano</h2>
+        <p class="v2-header-desc">
+          O PCA é mais útil quando funciona como processo de trabalho, não como arquivo produzido no fim do prazo. Ajudamos a definir quem pede, quem revisa, quem consolida, quem aprova e quem acompanha — com critérios, prazos, responsáveis e rastreabilidade.
+        </p>
+      </div>
+
+      <div class="v2-process-timeline-grid">
+        <div class="v2-step-timeline-card">
+          <div class="step-badge-number">Etapa 01</div>
+          <h3>Identificar a necessidade</h3>
+          <p>A secretaria ou setor informa o que precisa, por que precisa e quando pretende contratar.</p>
+        </div>
+
+        <div class="v2-step-timeline-card">
+          <div class="step-badge-number">Etapa 02</div>
+          <h3>Registrar o DFD</h3>
+          <p>A demanda recebe o Documento de Formalização da Demanda (DFD) com descrição, quantidade, estimativa preliminar, prioridade, dependências e responsável.</p>
+        </div>
+
+        <div class="v2-step-timeline-card">
+          <div class="step-badge-number">Etapa 03</div>
+          <h3>Consolidar e comparar</h3>
+          <p>Objetos semelhantes são agrupados; inconsistências, duplicidades e lacunas são sinalizadas para saneamento.</p>
+        </div>
+
+        <div class="v2-step-timeline-card">
+          <div class="step-badge-number">Etapa 04</div>
+          <h3>Estudar a solução</h3>
+          <p>O Estudo Técnico Preliminar (ETP) compara alternativas; a pesquisa de preços e o orçamento apoiam a decisão.</p>
+        </div>
+
+        <div class="v2-step-timeline-card">
+          <div class="step-badge-number">Etapa 05</div>
+          <h3>Preparar a contratação</h3>
+          <p>O Termo de Referência (TR) ou Projeto Básico (PB) é elaborado conforme o objeto e as regras aplicáveis.</p>
+        </div>
+
+        <div class="v2-step-timeline-card">
+          <div class="step-badge-number">Etapa 06</div>
+          <h3>Publicar e acompanhar</h3>
+          <p>O plano é aprovado, publicado, revisado quando necessário e monitorado durante o exercício.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DIAGRAMA DE INTEGRAÇÃO (INFOGRÁFICO DE FLUXO EM PIPELINE) -->
+  <section id="diagrama" class="v2-section-wrapper">
+    <div class="container">
+      
+      <div class="v2-card-header-module">
+        <span class="v2-header-tag">Pipeline de Integração</span>
+        <h2 class="v2-header-title">Diagrama de Integração do Planejamento</h2>
+        <p class="v2-header-desc">
+          Veja a definição de cada etapa do processo em formato de fluxo contínuo, conectando a demanda inicial da secretaria até o acompanhamento do plano.
+        </p>
+      </div>
+
+      <div class="v2-pipeline-grid">
+        <div class="v2-pipeline-card">
+          <span class="pipe-num">01</span>
+          <h4>Secretaria / Setor</h4>
+          <p>Identificação inicial da necessidade de compra e estimativa de prazo.</p>
+          <div class="pipe-arrow">➔</div>
+        </div>
+
+        <div class="v2-pipeline-card">
+          <span class="pipe-num">02</span>
+          <h4>DFD</h4>
+          <p>Preenchimento do Documento de Formalização da Demanda com justificativas.</p>
+          <div class="pipe-arrow">➔</div>
+        </div>
+
+        <div class="v2-pipeline-card">
+          <span class="pipe-num">03</span>
+          <h4>Consolidação</h4>
+          <p>Agrupamento de itens semelhantes e triagem contra fracionamento.</p>
+          <div class="pipe-arrow">➔</div>
+        </div>
+
+        <div class="v2-pipeline-card">
+          <span class="pipe-num">04</span>
+          <h4>ETP</h4>
+          <p>Estudo Técnico Preliminar para comparar alternativas viáveis.</p>
+          <div class="pipe-arrow">➔</div>
+        </div>
+
+        <div class="v2-pipeline-card">
+          <span class="pipe-num">05</span>
+          <h4>Pesquisa de Preços</h4>
+          <p>Coleta oficial de preços praticados e parâmetros do mercado.</p>
+          <div class="pipe-arrow">➔</div>
+        </div>
+
+        <div class="v2-pipeline-card">
+          <span class="pipe-num">06</span>
+          <h4>TR / PB</h4>
+          <p>Redação técnica do Termo de Referência ou Projeto Básico.</p>
+          <div class="pipe-arrow">➔</div>
+        </div>
+
+        <div class="v2-pipeline-card">
+          <span class="pipe-num">07</span>
+          <h4>PPA / LDO / LOA</h4>
+          <p>Alinhamento direto com a disponibilidade e dotação orçamentária.</p>
+          <div class="pipe-arrow">➔</div>
+        </div>
+
+        <div class="v2-pipeline-card pipeline-finish">
+          <span class="pipe-num">08</span>
+          <h4>Acompanhamento</h4>
+          <p>Publicação oficial e monitoramento contínuo da execução anual.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SOLUÇÕES PRODUTIZADAS (Bento Service Hub) -->
+  <section id="solucoes" class="v2-section-wrapper">
+    <div class="container">
+      
+      <div class="v2-card-header-module">
+        <span class="v2-header-tag">Modelos de Apoio</span>
+        <h2 class="v2-header-title">Como Apoiamos o Seu Município</h2>
+        <p class="v2-header-desc">
+          Modelos de atuação com escopo, entregáveis e produtos claramente definidos para atender a diferentes níveis de maturidade institucional.
+        </p>
+      </div>
+
+      <div class="v2-services-grid">
+        
+        <div class="v2-service-card" id="card-diagnostico">
+          <div class="service-tag">Etapa Inicial</div>
+          <h3>Diagnóstico PCA</h3>
+          <p>Leitura do regulamento local, calendário, sistema, documentos existentes, atores e principais lacunas da gestão municipal.</p>
+          <div class="service-box">
+            <strong>Entregáveis:</strong>
+            <ul>
+              <li>Mapa de maturidade institucional</li>
+              <li>Plano de ação para estruturação do PCA</li>
+            </ul>
+          </div>
+          <a href="#contato" class="v2-btn v2-btn-outline product-cta" data-service="Diagnóstico PCA">Quero diagnosticar o ciclo</a>
+        </div>
+
+        <div class="v2-service-card" id="card-oficina">
+          <div class="service-tag">Capacitação Prática</div>
+          <h3>Oficina PCA em Movimento</h3>
+          <p>Oficina curta e aplicada com os próprios objetos reais do órgão. Treina secretarias, compras, orçamento, contabilidade, procuradoria e controle interno.</p>
+          <div class="service-box">
+            <strong>Entregáveis:</strong>
+            <ul>
+              <li>Definição prática de papéis e DFDs modelos</li>
+              <li>Revisão de demandas reais sem dados sigilosos</li>
+            </ul>
+          </div>
+          <a href="#contato" class="v2-btn v2-btn-outline product-cta" data-service="Oficina PCA em Movimento">Solicitar oficina</a>
+        </div>
+
+        <div class="v2-service-card" id="card-implantacao">
+          <div class="service-tag">Implantação Assistida</div>
+          <h3>Implantação do PCA</h3>
+          <p>Definição de papéis, formulário de DFD, padronização, catálogo, critérios de prioridade, consolidação, calendário reverso, capacitação e apoio à publicação.</p>
+          <div class="service-box">
+            <strong>Entregáveis:</strong>
+            <ul>
+              <li>Matriz de governança e fluxo oficial</li>
+              <li>Relatório de consolidação e minuta para publicação</li>
+            </ul>
+          </div>
+          <a href="#contato" class="v2-btn v2-btn-outline product-cta" data-service="Implantação do PCA">Conhecer a implantação</a>
+        </div>
+
+        <div class="v2-service-card" id="card-fase-preparatoria">
+          <div class="service-tag">Escopo Ampliado</div>
+          <h3>PCA + Fase Preparatória</h3>
+          <p>Integração contínua do PCA com o Estudo Técnico Preliminar (ETP), pesquisa de preços, TR/PB, PPA, LDO, LOA e cronograma mensal de contratações.</p>
+          <div class="service-box">
+            <strong>Entregáveis:</strong>
+            <ul>
+              <li>Checklists de instrução de ETP e TR/PB</li>
+              <li>Matriz de alinhamento orçamentário</li>
+            </ul>
+          </div>
+          <a href="#contato" class="v2-btn v2-btn-outline product-cta" data-service="PCA + Fase Preparatória">Falar sobre o escopo</a>
+        </div>
+
+        <div class="v2-service-card" id="card-acompanhamento">
+          <div class="service-tag">Gestão Contínua</div>
+          <h3>Acompanhamento Anual</h3>
+          <p>Revisões periódicas, inclusão/exclusão motivada, justificativas técnicas, monitoramento mensal ou trimestral e preparação para o ciclo seguinte.</p>
+          <div class="service-box">
+            <strong>Entregáveis:</strong>
+            <ul>
+              <li>Relatórios periódicos de evolução</li>
+              <li>Acompanhamento de execução e transição</li>
+            </ul>
+          </div>
+          <a href="#contato" class="v2-btn v2-btn-outline product-cta" data-service="Acompanhamento Anual">Solicitar acompanhamento</a>
+        </div>
+
+        <!-- Featured Card -->
+        <div class="v2-service-card featured-service-card" id="calendario-reverso">
+          <div class="service-tag tag-emerald">Para Baixa Maturidade</div>
+          <h3>Calendário Reverso do PCA</h3>
+          <p>Metodologia voltada a municípios sem governança prévia: parte das demandas recorrentes, contratações existentes e prazos de execução para organizar, de trás para frente, o próximo ciclo de planejamento.</p>
+          <div class="service-box bg-emerald-box">
+            <strong>Nota de Limite Jurídico:</strong>
+            <p style="font-size: 0.85rem; color: #475569; margin-top: 0.25rem;">Não regulariza retroativamente contratações nem substitui a análise jurídica ou o planejamento legalmente exigido.</p>
+          </div>
+          <a href="#contato" class="v2-btn v2-btn-emerald product-cta" data-service="Calendário Reverso do PCA">Verificar se se aplica ao meu município</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CALENDÁRIO DE COMPRAS (SEGMENTED TAB CARD) -->
+  <section id="calendario" class="v2-section-wrapper">
+    <div class="container">
+      
+      <div class="v2-card-header-module">
+        <span class="v2-header-tag">Gestão de Prazos</span>
+        <h2 class="v2-header-title">Janelas do Calendário de Compras</h2>
+        <p class="v2-header-desc">
+          O calendário do PCA precisa reservar tempo para estudar a solução, estimar quantidades, pesquisar preços e elaborar o Termo de Referência ou o Projeto Básico. Quando o pedido chega tarde, o calendário vira urgência.
+        </p>
+      </div>
+
+      <div class="v2-calendar-card-hub">
+        <div class="v2-segmented-tabs-nav">
+          <button class="v2-segment-tab active" data-tab="tab-all">Visão Geral do Ciclo</button>
+          <button class="v2-segment-tab" data-tab="tab-p1">Out – Dez (Diagnóstico)</button>
+          <button class="v2-segment-tab" data-tab="tab-p2">Jan – Mar (Coleta & DFD)</button>
+          <button class="v2-segment-tab" data-tab="tab-p3">Abr – Ago (Consolidação)</button>
+          <button class="v2-segment-tab" data-tab="tab-p4">Set – Nov (LOA & Ajustes)</button>
+          <button class="v2-segment-tab" data-tab="tab-p5">Exercício (Acompanhamento)</button>
+        </div>
+
+        <div class="v2-tab-panel active" id="tab-all">
+          <div class="v2-timeline-periods-grid">
+            <div class="v2-period-card">
+              <span class="period-pills">Outubro – Dezembro</span>
+              <h4>Diagnóstico & Preparação</h4>
+              <p>Diagnóstico de prontidão, alinhamento institucional e estruturação do ciclo de coleta.</p>
+            </div>
+
+            <div class="v2-period-card">
+              <span class="period-pills">Janeiro – Março</span>
+              <h4>Coleta & Saneamento</h4>
+              <p>Envio dos DFDs pelas secretarias, saneamento de pendências e checagem de prioridades.</p>
+            </div>
+
+            <div class="v2-period-card">
+              <span class="period-pills">Abril – Agosto</span>
+              <h4>Consolidação & Implantação</h4>
+              <p>Agrupamento de itens semelhantes e implantação assistida em calendários locais ou tardios.</p>
+            </div>
+
+            <div class="v2-period-card">
+              <span class="period-pills">Setembro – Novembro</span>
+              <h4>Revisão Orçamentária</h4>
+              <p>Conferência de disponibilidade orçamentária com a proposta da LOA e ajustes finais.</p>
+            </div>
+
+            <div class="v2-period-card active-period">
+              <span class="period-pills">Durante o Exercício</span>
+              <h4>Acompanhamento & Ciclo Seguinte</h4>
+              <p>Monitoramento mensal da execução, inclusões/exclusões motivadas e preparação antecipada.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="v2-tab-panel" id="tab-p1">
+          <div class="v2-panel-detail-box">
+            <h4>Outubro a Dezembro: Fase Diagnóstica e Estruturação</h4>
+            <p>Período ideal para realizar a leitura das normas locais, verificar a maturidade dos setores e definir o modelo padronizado do Documento de Formalização da Demanda (DFD) para o ciclo seguinte.</p>
+          </div>
+        </div>
+
+        <div class="v2-tab-panel" id="tab-p2">
+          <div class="v2-panel-detail-box">
+            <h4>Janeiro a Março: Coleta de Demandas e Saneamento Inicial</h4>
+            <p>As secretarias municipais preenchem os DFDs com justificativas, quantidades e prioridades. A equipe de planejamento realiza o saneamento preventivo de informações incompletas.</p>
+          </div>
+        </div>
+
+        <div class="v2-tab-panel" id="tab-p3">
+          <div class="v2-panel-detail-box">
+            <h4>Abril a Agosto: Consolidação e Implantação Assistida</h4>
+            <p>Agrupamento de compras de objetos idênticos de diferentes pastas para evitar o fracionamento ilícito de despesas e alavancar a economia de escala.</p>
+          </div>
+        </div>
+
+        <div class="v2-tab-panel" id="tab-p4">
+          <div class="v2-panel-detail-box">
+            <h4>Setembro a Novembro: Compatibilização com a LOA Municipal</h4>
+            <p>Ajuste final entre as estimativas do PCA e a Lei Orçamentária Anual (LOA) em tramitação na Câmara Municipal para garantir lastro orçamentário real.</p>
+          </div>
+        </div>
+
+        <div class="v2-tab-panel" id="tab-p5">
+          <div class="v2-panel-detail-box">
+            <h4>Durante o Exercício: Acompanhamento e Revisões Motivadas</h4>
+            <p>Monitoramento mensal do cronograma de contratações, aprovação formal de alterações no PCA e preparação do calendário do ciclo posterior.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="v2-legal-regulation-card">
+        <strong>Nota sobre Regulamentação:</strong> O calendário real e os prazos aplicáveis dependem da regulamentação própria de cada ente federativo e do regime de recursos.
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CAPACITAÇÃO EM SERVIÇO (AUDIENCE HUB DARK CARD) -->
+  <section id="capacitacao" class="v2-section-wrapper">
+    <div class="container">
+      
+      <div class="v2-dark-hub-card">
+        <span class="v2-header-tag text-emerald">Capacitação em Serviço</span>
+        <h2 class="v2-header-title text-white">A Lei precisa virar rotina de trabalho.</h2>
+        <p class="v2-header-desc text-slate">
+          A capacitação é aplicada aos objetos reais do órgão e transforma a norma em fluxo: quem solicita, quais informações devem ser entregues, quem revisa, como a demanda conversa com o orçamento, quando o ETP é necessário, quando o TR ou PB será elaborado e como a execução será acompanhada.
+        </p>
+
+        <div class="v2-role-cards-grid">
+          <div class="v2-role-card">
+            <h4>Secretarias Requisitantes</h4>
+            <p>Preenchimento correto do DFD, justificativa da necessidade e estimativa de quantitativos.</p>
+          </div>
+
+          <div class="v2-role-card">
+            <h4>Setor de Compras & Licitações</h4>
+            <p>Consolidação de objetos semelhantes, triagem contra fracionamento e montagem do PCA.</p>
+          </div>
+
+          <div class="v2-role-card">
+            <h4>Orçamento & Contabilidade</h4>
+            <p>Compatibilização das estimativas com PPA, LDO e disponibilidade financeira da LOA.</p>
+          </div>
+
+          <div class="v2-role-card">
+            <h4>Procuradoria & Controle Interno</h4>
+            <p>Verificação de conformidade jurídica do regulamento e acompanhamento de auditoria.</p>
+          </div>
+
+          <div class="v2-role-card">
+            <h4>Autoridade Competente</h4>
+            <p>Aprovação formal do plano, decisões discricionárias e gestão de riscos da administração.</p>
+          </div>
+        </div>
+
+        <div class="v2-privacy-disclaimer">
+          <em>Importante: Trabalhamos estritamente com objetos e processos reais do órgão, sem solicitar dados sigilosos.</em>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PAINEL DE ACOMPANHAMENTO (MOCKUP DASHBOARD CARD) -->
+  <section class="v2-section-wrapper">
+    <div class="container">
+      
+      <div class="v2-card-header-module">
+        <span class="v2-header-tag">Rastreabilidade & Gestão</span>
+        <h2 class="v2-header-title">Supere o planejamento manual e sem integração de informações</h2>
+        <p class="v2-header-desc">
+          Planilhas podem iniciar o trabalho, mas não devem ser o único mecanismo de controle quando há várias secretarias, objetos semelhantes, prazos e revisões.
+        </p>
+      </div>
+
+      <div class="v2-dashboard-mockup-card">
+        <div class="v2-mockup-bar">
+          <div class="v2-mockup-title">Painel de Acompanhamento do PCA Municipal</div>
+          <span class="v2-status-pill">● Modelo de Painel em Operação</span>
+        </div>
+
+        <div class="v2-mockup-metrics-grid">
+          <div class="v2-metric-box">
+            <span class="m-title">DFDs Recebidos</span>
+            <span class="m-value">48 Registros</span>
+            <span class="m-badge badge-green">Secretarias mapeadas</span>
+          </div>
+
+          <div class="v2-metric-box">
+            <span class="m-title">Completude de Dados</span>
+            <span class="m-value">85% Saneados</span>
+            <span class="m-badge badge-yellow">12 pendências de justificativa</span>
+          </div>
+
+          <div class="v2-metric-box">
+            <span class="m-title">Objetos Agrupados</span>
+            <span class="m-value">14 Grupos</span>
+            <span class="m-badge badge-blue">Sem risco de fracionamento</span>
+          </div>
+
+          <div class="v2-metric-box">
+            <span class="m-title">Status ETP / TR</span>
+            <span class="m-value">22 Em Instrução</span>
+            <span class="m-badge badge-purple">Cronograma em dia</span>
+          </div>
+        </div>
+
+        <div class="v2-mockup-footer-quote">
+          "Tecnologia para organizar e acompanhar; método para decidir." O sistema não substitui a decisão do agente público, a análise jurídica ou a responsabilidade da autoridade.
+        </div>
+      </div>
+
+      <div class="v2-disclaimer-info-card">
+        <strong>Camada Tecnológica:</strong> <em>"Estamos estruturando uma camada tecnológica para acelerar a consolidação; a implantação começa pelo diagnóstico e pelo fluxo institucional."</em>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FONTES DE REFERÊNCIA & TRANSPARÊNCIA -->
+  <section class="v2-section-wrapper">
+    <div class="container">
+      
+      <div class="v2-card-header-module">
+        <span class="v2-header-tag">Fundamentação Técnica</span>
+        <h2 class="v2-header-title">Método baseado em documentos e rotinas públicas</h2>
+        <p class="v2-header-desc">
+          Utilizamos catálogos oficiais e referências públicas de regulamentação para orientar a padronização das compras do município.
+        </p>
+      </div>
+
+      <div class="v2-ref-cards-grid">
+        <div class="v2-ref-card">
+          <h4>Recursos Oficiais do Compras.gov.br</h4>
+          <p>Links técnicos oficiais para auxílio no cadastramento e padronização de objetos:</p>
+          <ul class="ref-links-list">
+            <li><a href="https://www.gov.br/compras/pt-br" target="_blank" rel="noopener" id="link-catmat">Catálogo Compras.gov.br ↗</a></li>
+            <li><a href="https://dados.gov.br" target="_blank" rel="noopener" id="link-dados-abertos">Dados Abertos do Compras.gov.br ↗</a></li>
+            <li><a href="https://www.gov.br/compras/pt-br/sistemas/conheca-o-compras/catalogo-de-materiais-e-servicos" target="_blank" rel="noopener" id="link-manual-catmat">Manual CATMAT/CATSER ↗</a></li>
+          </ul>
+        </div>
+
+        <div class="v2-ref-card">
+          <h4>Exemplos de Entes com Regulamentação Localizada</h4>
+          <p>Exemplos de transparência e regulamentação do PCA na administração pública:</p>
+          <ul class="ref-links-list">
+            <li><a href="https://pncp.gov.br" target="_blank" rel="noopener" id="link-pncp">PNCP — Planos de Contratações Anuais ↗</a></li>
+            <li><a href="https://www.novais.sp.gov.br" target="_blank" rel="noopener" id="link-novais">Prefeitura de Novais/SP — PCA e decretos municipais ↗</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FORMULÁRIO DE DIAGNÓSTICO B2A (Executive Form Card) -->
+  <section id="contato" class="v2-section-wrapper">
+    <div class="container">
+      
+      <div class="v2-form-main-wrapper">
+        <div class="v2-form-info-col">
+          <h2>Solicitar Diagnóstico de Prontidão do PCA</h2>
+          <p>
+            Receba uma análise preliminar sobre a situação do planejamento de compras do seu município ou órgão público, identificando os principais gargalos e o plano de ação adequado.
+          </p>
+
+          <div class="v2-form-benefits-list">
+            <div class="benefit-item">✔ Análise do regulamento local e maturidade do órgão</div>
+            <div class="benefit-item">✔ Identificação de riscos de descontinuidade ou fracionamento</div>
+            <div class="benefit-item">✔ Atendimento técnico especializado em gestão pública</div>
+          </div>
+        </div>
+
+        <div class="v2-form-input-col">
+          <form id="main-lead-form" class="v2-lead-form">
+            
+            <div class="form-group">
+              <label for="lead-name">Nome Completo *</label>
+              <input type="text" id="lead-name" class="form-control" placeholder="Ex: Dr. Roberto Silva" required>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="lead-email">E-mail Institucional *</label>
+                <input type="email" id="lead-email" class="form-control" placeholder="nome@municipio.gov.br" required>
+              </div>
+
+              <div class="form-group">
+                <label for="lead-phone">Telefone / WhatsApp (Opcional)</label>
+                <input type="tel" id="lead-phone" class="form-control" placeholder="(00) 00000-0000">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="lead-entity">Município ou Órgão Público *</label>
+                <input type="text" id="lead-entity" class="form-control" placeholder="Ex: Prefeitura Municipal de..." required>
+              </div>
+
+              <div class="form-group">
+                <label for="lead-uf">UF *</label>
+                <select id="lead-uf" class="form-select" required>
+                  <option value="" disabled selected>Selecione a UF</option>
+                  <option value="AC">AC</option><option value="AL">AL</option><option value="AP">AP</option><option value="AM">AM</option><option value="BA">BA</option><option value="CE">CE</option><option value="DF">DF</option><option value="ES">ES</option><option value="GO">GO</option><option value="MA">MA</option><option value="MT">MT</option><option value="MS">MS</option><option value="MG">MG</option><option value="PA">PA</option><option value="PB">PB</option><option value="PR">PR</option><option value="PE">PE</option><option value="PI">PI</option><option value="RJ">RJ</option><option value="RN">RN</option><option value="RS">RS</option><option value="RO">RO</option><option value="RR">RR</option><option value="SC">SC</option><option value="SP">SP</option><option value="SE">SE</option><option value="TO">TO</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="lead-role">Cargo ou Área de Atuação *</label>
+                <select id="lead-role" class="form-select" required>
+                  <option value="" disabled selected>Selecione seu cargo/área</option>
+                  <option value="Prefeito / Vice / Dirigente">Prefeito / Vice / Dirigente Máximo</option>
+                  <option value="Secretário Municipal / Gestor">Secretário Municipal / Gestor de Pasta</option>
+                  <option value="Compras / Licitações / Agente de Contratação">Compras / Licitações / Agente de Contratação</option>
+                  <option value="Planejamento / Orçamento / Finanças">Planejamento / Orçamento / Finanças</option>
+                  <option value="Procuradoria / Assessoria Jurídica">Procuradoria / Assessoria Jurídica</option>
+                  <option value="Controle Interno / Auditoria">Controle Interno / Auditoria</option>
+                  <option value="Setor Requisitante / Demandante">Setor Requisitante / Demandante</option>
+                  <option value="Outros">Outros</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="lead-stage">Estágio Atual do PCA *</label>
+                <select id="lead-stage" class="form-select" required>
+                  <option value="" disabled selected>Selecione o estágio atual</option>
+                  <option value="ainda não regulamentamos">Ainda não regulamentamos o PCA</option>
+                  <option value="temos regulamento, mas não temos fluxo">Temos regulamento, mas não temos fluxo estruturado</option>
+                  <option value="coletamos demandas em planilhas">Coletamos demandas dispersas em planilhas</option>
+                  <option value="temos PCA publicado e precisamos acompanhar">Temos PCA publicado e precisamos acompanhar a execução</option>
+                  <option value="queremos preparar o próximo ciclo">Queremos preparar antecipadamente o próximo ciclo</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="lead-cycle">Ciclo que deseja preparar *</label>
+                <select id="lead-cycle" class="form-select" required>
+                  <option value="Próximo Ciclo (2027)" selected>Próximo Ciclo de Planejamento (2027)</option>
+                  <option value="Ciclo Atual (2026)">Ajustes e Acompanhamento do Ciclo Atual (2026)</option>
+                  <option value="Transição e Diagnóstico">Diagnóstico de Transição Institucional</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="lead-difficulty">Principal Dificuldade *</label>
+                <select id="lead-difficulty" class="form-select" required>
+                  <option value="Engajamento das secretarias">Engajamento e adesão das secretarias</option>
+                  <option value="Qualidade dos DFDs">Qualidade e detalhamento dos DFDs</option>
+                  <option value="Consolidação e agrupamento">Consolidação e agrupamento de itens semelhantes</option>
+                  <option value="Alinhamento com LOA">Alinhamento orçamentário com a LOA</option>
+                  <option value="Prazos para ETP e TR">Prazos insuficientes para instrução de ETP e TR/PB</option>
+                  <option value="Outra dificuldade">Outra dificuldade</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="consent-checkbox-group">
+              <input type="checkbox" id="lead-optin" class="form-checkbox">
+              <label for="lead-optin">
+                Desejo receber materiais educativos e atualizações técnicas sobre planejamento de compras públicas (opcional; descadastro a qualquer momento).
+              </label>
+            </div>
+
+            <button type="submit" class="v2-btn v2-btn-emerald v2-btn-full" id="lead-submit-btn">
+              Solicitar Diagnóstico de Prontidão do PCA ➔
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PERGUNTAS FREQUENTES (FAQ) -->
+  <section id="faq" class="v2-section-wrapper">
+    <div class="container">
+      
+      <div class="v2-card-header-module">
+        <span class="v2-header-tag">Esclarecimentos</span>
+        <h2 class="v2-header-title">Perguntas Frequentes (FAQ)</h2>
+        <p class="v2-header-desc">
+          Esclarecimentos sobre a aplicação do PCA, fundamentação legal e limites da consultoria.
+        </p>
+      </div>
+
+      <div class="v2-faq-stack">
+
+        <div class="v2-faq-card active">
+          <button class="faq-question">
+            <span>O PCA é obrigatório para todo município?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>A Lei nº 14.133/2021 estruturou o PCA, mas a obrigação, o calendário e o sistema aplicáveis ao seu órgão dependem da regulamentação do ente, do Tribunal de Contas competente e do regime de recursos aplicável. O Decreto Federal nº 10.947/2022 é referência para a Administração Pública Federal direta, autárquica e fundacional, devendo municípios verificar seu regulamento local.</p>
+          </div>
+        </div>
+
+        <div class="v2-faq-card">
+          <button class="faq-question">
+            <span>O que é o Documento de Formalização da Demanda (DFD)?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>É o registro oficial da necessidade de contratação da secretaria ou setor: contendo sua justificativa, descrição do objeto, quantidade estimada, estimativa preliminar de valor, data pretendida, prioridade, dependências e setor responsável, conforme o regulamento aplicável.</p>
+          </div>
+        </div>
+
+        <div class="v2-faq-card">
+          <button class="faq-question">
+            <span>Qual é a diferença entre Termo de Referência (TR) e Projeto Básico (PB)?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>O Termo de Referência (TR) orienta a contratação de bens e serviços comuns. O Projeto Básico (PB) é utilizado nas hipóteses próprias de obras e serviços de engenharia. A escolha e o conteúdo devem seguir a lei, o regulamento e o objeto concreto.</p>
+          </div>
+        </div>
+
+        <div class="v2-faq-card">
+          <button class="faq-question">
+            <span>O que é o Calendário Reverso do PCA?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>É uma metodologia para municípios com baixa maturidade de planejamento. A equipe parte das demandas recorrentes, contratações existentes e prazos de execução para organizar o próximo ciclo de trás para frente, identificando lacunas e dependências. Não é uma forma de legitimar retroativamente contratações já realizadas.</p>
+          </div>
+        </div>
+
+        <div class="v2-faq-card">
+          <button class="faq-question">
+            <span>O que é uma transferência voluntária?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>É o repasse de recursos correntes ou de capital a outro ente federativo, por cooperação, auxílio ou assistência financeira, sem decorrer de obrigação constitucional ou legal. Convênios e contratos de repasse da União são exemplos. O instrumento específico deve ser analisado caso a caso (Art. 25 da LRF).</p>
+          </div>
+        </div>
+
+        <div class="v2-faq-card">
+          <button class="faq-question">
+            <span>Quando devemos começar a preparação do PCA?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Para o ciclo seguinte, recomenda-se iniciar o diagnóstico antes da coleta de demandas, normalmente entre outubro e março em calendários antecipados. Municípios com prazos locais em julho ou agosto podem contratar apoio entre março e junho. O calendário real deve ser conferido na regulamentação local.</p>
+          </div>
+        </div>
+
+        <div class="v2-faq-card">
+          <button class="faq-question">
+            <span>Quais são os limites da consultoria prestada?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>A consultoria atua no suporte metodológico e institucional. O trabalho não substitui a decisão discricionária da autoridade competente, o parecer jurídico privativo da procuradoria, a assinatura do servidor público responsável, a pesquisa de preços de responsabilidade do órgão ou a adequação às normas do ente.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER INSTITUCIONAL -->
+  <footer class="v2-footer">
+    <div class="container">
+      <div class="v2-footer-grid">
+        <div class="v2-footer-brand">
+          <div class="v2-brand-text text-white">Licite<span style="color: #10b981;">Org</span></div>
+          <p>
+            Consultoria institucional em planejamento das compras públicas, estruturação do PCA e governança em contratações públicas sob a Lei nº 14.133/2021.
+          </p>
+        </div>
+
+        <div class="v2-footer-col">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#como-funciona">Como funciona</a></li>
+            <li><a href="#diagrama">Infográfico de Fluxo</a></li>
+            <li><a href="#solucoes">Soluções Produtizadas</a></li>
+            <li><a href="#calendario">Calendário de Compras</a></li>
+            <li><a href="#capacitacao">Capacitação em Serviço</a></li>
+          </ul>
+        </div>
+
+        <div class="v2-footer-col">
+          <h4>Instrumentos PCA</h4>
+          <ul>
+            <li><a href="#diagrama">Documento de Formalização da Demanda (DFD)</a></li>
+            <li><a href="#diagrama">Estudo Técnico Preliminar (ETP)</a></li>
+            <li><a href="#diagrama">Termo de Referência (TR) / PB</a></li>
+            <li><a href="#calendario-reverso">Calendário Reverso do PCA</a></li>
+          </ul>
+        </div>
+
+        <div class="v2-footer-col">
+          <h4>Atendimento</h4>
+          <ul>
+            <li><a href="mailto:licite.adm.contato@gmail.com" id="footer-link-email">Enviar E-mail</a></li>
+            <li><a href="https://wa.me/5584999660794" target="_blank" rel="noopener" id="footer-link-whatsapp">Falar no WhatsApp</a></li>
+            <li><a href="#" id="footer-link-privacy">Política de Privacidade</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="v2-footer-notice">
+        <strong>Aviso Legal & Governança:</strong> A consultoria não substitui a decisão da autoridade competente, o parecer jurídico privativo da procuradoria, a assinatura do servidor público, a pesquisa de preços de responsabilidade do órgão ou a validação do regulamento local.
+      </div>
+
+      <div class="v2-footer-bottom">
+        <p>&copy; 2026 LiciteOrg — Consultoria em Planejamento de Compras Públicas. Todos os direitos reservados.</p>
+        <p>Atuação em estrita conformidade com a legislação brasileira.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Pill Button -->
+  <a href="https://wa.me/5584999660794?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20Diagn%C3%B3stico%20do%20PCA." target="_blank" rel="noopener" class="v2-whatsapp-float" id="floating-whatsapp-btn">
+    <span class="wa-txt">WhatsApp</span>
+  </a>
+
+  <!-- Modal de Confirmação -->
+  <div id="success-modal" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box">
+      <h3>Solicitação Enviada com Sucesso!</h3>
+      <p style="color: #64748b; margin: 1rem 0 1.5rem 0; font-size: 0.95rem;">
+        Sua solicitação de diagnóstico foi recebida por nossa equipe técnica. Entraremos em contato institucional para dar prosseguimento à análise do município.
+      </p>
+      <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+        <button id="whatsapp-redirect-btn" class="v2-btn v2-btn-emerald" style="width: 100%;">
+          Falar no WhatsApp
+        </button>
+        <button id="modal-close-btn" class="v2-btn v2-btn-outline" style="width: 100%;">
+          Fechar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de Privacidade -->
+  <div id="privacy-modal" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box privacy-modal-box">
+      <h3>Política de Privacidade & Proteção de Dados (LGPD)</h3>
+      <div class="privacy-modal-content">
+        <p><strong>Controlador dos Dados:</strong> LiciteOrg Consultoria em Planejamento de Compras Públicas.</p>
+        <p><strong>Finalidade da Coleta:</strong> Os dados fornecidos no formulário são utilizados exclusivamente para a realização da análise prévia de maturidade do PCA e contato institucional agendado com o município ou órgão requerente.</p>
+        <p><strong>Tratamento e Retenção:</strong> Mantemos apenas as informações mínimas necessárias para a prestação do atendimento solicitado. Não comercializamos, não compartilhamos e não utilizamos bases públicas para disparos automatizados não solicitados.</p>
+        <p><strong>Direitos do Titular:</strong> Você pode solicitar a confirmação, correção ou exclusão definitiva de seus dados a qualquer momento enviando um e-mail para <em>licite.adm.contato@gmail.com</em>.</p>
+      </div>
+      <button id="privacy-modal-close-btn" class="v2-btn v2-btn-emerald" style="width: 100%; margin-top: 1rem;">
+        Compreendido e Fechar
+      </button>
+    </div>
+  </div>
+
+  <!-- Custom JS v2 -->
+  <script src="js/main_v2.js"></script>
+</body>
+</html>
