@@ -260,6 +260,49 @@ header.navbar.scrolled {
   margin: 0 auto 3.5rem auto;
 }
 
+/* Header de Seção Expandido e Justificado para MÉTODO */
+#metodo .section-header {
+  max-width: 100%;
+  text-align: left;
+  margin-bottom: 3.5rem;
+  padding: 2.5rem 3rem;
+  background: var(--bg-surface);
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+#metodo .section-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--brand-blue) 0%, var(--brand-emerald) 100%);
+}
+
+#metodo .section-title {
+  font-size: 2.35rem;
+  color: var(--brand-navy);
+  margin-bottom: 1.25rem;
+  text-align: left;
+  line-height: 1.25;
+}
+
+#metodo .section-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 100%;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  line-height: 1.75;
+  margin: 0;
+}
+
 .section-tag {
   display: inline-block;
   padding: 0.35rem 0.95rem;
@@ -333,63 +376,201 @@ header.navbar.scrolled {
   padding: 0 0.5rem;
 }
 
-/* Horizontal Flow Ribbon accompanying full page width */
-.hero-flow-ribbon {
+/* Card do Fluxo Institucional Integrado do PCA - Fundo Azul, Centralizado & Alta Visibilidade */
+.hero-infographic-flow {
+  width: 100%;
+  margin: 2.25rem 0 0 0;
+  padding: 2.25rem 1.75rem;
+  background: linear-gradient(135deg, #0d2147 0%, #173b7a 50%, #0b1936 100%);
+  border: 1px solid rgba(59, 130, 246, 0.5);
+  border-radius: var(--radius-xl);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), 0 0 35px rgba(37, 99, 235, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-infographic-flow::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -20%;
+  width: 140%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.25) 0%, rgba(37, 99, 235, 0.12) 50%, transparent 75%);
+  pointer-events: none;
+}
+
+.hero-infographic-flow .flow-header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 1.75rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.hero-infographic-flow .flow-header-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  font-size: 0.825rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  color: #ffffff;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  border: 1px solid rgba(147, 197, 253, 0.5);
+  padding: 0.45rem 1.4rem;
+  border-radius: var(--radius-full);
+  text-transform: uppercase;
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.4), 0 0 20px rgba(59, 130, 246, 0.3);
+  margin-bottom: 0.5rem;
+}
+
+.hero-infographic-flow .flow-header-sub {
+  font-size: 0.85rem;
+  color: #cbd5e1;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.hero-infographic-flow .flow-track {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-infographic-flow .flow-node-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.25rem 0.75rem;
+  background: linear-gradient(160deg, #0f172a 0%, #1e293b 100%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-top: 4px solid #3b82f6;
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-fast);
+  position: relative;
+  min-height: 135px;
+}
+
+.hero-infographic-flow .flow-node-card:hover {
+  background: linear-gradient(160deg, #1e293b 0%, #172554 100%);
+  border-color: #60a5fa;
+  border-top-color: #60a5fa;
+  transform: translateY(-5px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.5), 0 0 22px rgba(59, 130, 246, 0.4);
+}
+
+.hero-infographic-flow .flow-node-card.active-node {
+  border-top-color: #60a5fa;
+  background: linear-gradient(160deg, #0f172a 0%, #1e3a8a 100%);
+}
+
+.hero-infographic-flow .flow-node-card.finish-node {
+  border-top-color: #10b981;
+  background: linear-gradient(160deg, #0f172a 0%, #064e3b 100%);
+}
+
+.hero-infographic-flow .node-step-badge {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 900;
+  color: #ffffff;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  padding: 0.25rem 0.7rem;
+  border-radius: var(--radius-full);
+  margin-bottom: 0.65rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hero-infographic-flow .flow-node-card.finish-node .node-step-badge {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  box-shadow: 0 3px 10px rgba(16, 185, 129, 0.4);
+}
+
+.hero-infographic-flow .node-title {
+  font-family: var(--font-heading);
+  font-size: 0.975rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.35rem;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+.hero-infographic-flow .node-desc {
+  font-size: 0.775rem;
+  color: #93c5fd;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.hero-infographic-flow .flow-connector {
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.35rem;
-  width: 100%;
-  margin: 0 0 2.25rem 0;
-  padding: 0.75rem 0.85rem;
-  background: var(--bg-surface);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-sm);
-  flex-wrap: wrap;
+  padding: 0 0.15rem;
 }
 
-.flow-step {
-  display: inline-flex;
+.hero-infographic-flow .connector-arrow-pill {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.4) 0%, rgba(59, 130, 246, 0.4) 100%);
+  border: 1px solid rgba(147, 197, 253, 0.6);
+  color: #60a5fa;
+  display: flex;
   align-items: center;
-  gap: 0.35rem;
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--brand-navy);
-  background: #ffffff;
-  padding: 0.35rem 0.6rem;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--border-color);
-  white-space: nowrap;
+  justify-content: center;
+  box-shadow: 0 0 14px rgba(59, 130, 246, 0.4);
   transition: all var(--transition-fast);
 }
 
-.flow-step:hover {
-  border-color: var(--brand-emerald);
-  color: var(--brand-emerald-dark);
-  background: var(--bg-emerald-light);
-  transform: translateY(-1px);
-}
-
-.flow-step .step-num {
-  font-size: 0.725rem;
-  font-weight: 800;
-  color: var(--brand-emerald);
-  background: var(--bg-emerald-light);
-  padding: 0.12rem 0.38rem;
-  border-radius: 4px;
-}
-
-.flow-arrow {
-  color: var(--brand-emerald);
-  font-size: 0.8rem;
-  opacity: 0.75;
+.hero-infographic-flow .flow-node-card:hover + .flow-connector .connector-arrow-pill,
+.hero-infographic-flow .connector-arrow-pill:hover {
+  background: linear-gradient(135deg, #2563eb 0%, #60a5fa 100%);
+  color: #ffffff;
+  transform: scale(1.15);
+  box-shadow: 0 0 22px rgba(96, 165, 250, 0.8);
 }
 
 @media (max-width: 992px) {
-  .hero-flow-ribbon {
-    justify-content: center;
-    gap: 0.6rem;
+  .hero-infographic-flow .flow-header-container {
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  .hero-infographic-flow .flow-track {
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+  .hero-infographic-flow .flow-node-card {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 1.1rem 1.35rem;
+    text-align: left;
+    min-height: auto;
+  }
+  .hero-infographic-flow .node-step-badge {
+    margin-bottom: 0;
+  }
+  .hero-infographic-flow .connector-arrow-pill {
+    transform: rotate(90deg);
   }
 }
 
@@ -512,6 +693,9 @@ header.navbar.scrolled {
   padding: 2rem;
   position: relative;
   transition: all var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .pain-card:hover {
@@ -539,6 +723,10 @@ header.navbar.scrolled {
 .pain-card p {
   font-size: 0.925rem;
   color: var(--text-secondary);
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  line-height: 1.65;
 }
 
 .compliance-alert-banner {
@@ -583,6 +771,9 @@ header.navbar.scrolled {
   padding: 2rem;
   transition: all var(--transition-normal);
   box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .step-card:hover {
@@ -611,6 +802,10 @@ header.navbar.scrolled {
 .step-card p {
   font-size: 0.95rem;
   color: var(--text-secondary);
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  line-height: 1.65;
 }
 
 /* Infográfico de Fluxo em Grade Horizontal Nítida */
