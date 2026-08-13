@@ -198,6 +198,18 @@ header.v2-navbar {
   box-shadow: 0 10px 24px rgba(16, 185, 129, 0.4);
 }
 
+.v2-btn-blue {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+}
+
+.v2-btn-blue:hover {
+  background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.45);
+}
+
 .v2-btn-hero-primary {
   background: linear-gradient(135deg, #10b981 0%, #059669 100%);
   color: #ffffff;
